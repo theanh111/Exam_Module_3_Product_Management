@@ -54,7 +54,13 @@
             </tr>
             <tr>
                 <th>Category</th>
-                <td><input type="text" name="categoryName" id="categoryName" placeholder="Phone..."></td>
+                <td>
+                    <select name="categoryName">
+                        <c:forEach items="${categoryList}" var="category">
+                            <option value="${category.getCategoryName()}">${category.getCategoryName()}</option>
+                        </c:forEach>
+                    </select>
+                </td>
             </tr>
         </table>
         <input type="submit" value="Add New">

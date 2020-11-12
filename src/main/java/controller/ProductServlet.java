@@ -127,7 +127,7 @@ public class ProductServlet extends HttpServlet {
 
     private void showAddForm(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException {
         List<Category> categories = categoryService.findAll();
-        request.setAttribute("categories", categories);
+        request.setAttribute("categoryList", categories);
         RequestDispatcher dispatcher = request.getRequestDispatcher("product/add.jsp");
         dispatcher.forward(request, response);
     }

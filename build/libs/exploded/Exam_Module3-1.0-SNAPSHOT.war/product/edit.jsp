@@ -34,22 +34,32 @@
         <table border="1" cellpadding="20">
             <tr>
                 <th>ID</th>
-                <th>Name</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Color</th>
-                <th>Description</th>
-                <th>Category</th>
+                <td><input type="number" disabled value="${product.getProductId()}"></td>
             </tr>
             <tr>
-                <td><input type="number" disabled value="${product.getProductId()}"></td>
+                <th>Name</th>
                 <td><input type="text" name="productName" id="productName" value="${product.getProductName()}"></td>
+            </tr>
+            <tr>
+                <th>Price</th>
                 <td><input type="number" name="productPrice" id="productPrice" value="${product.getProductPrice()}">
                 </td>
+            </tr>
+            <tr>
+                <th>Quantity</th>
                 <td><input type="number" name="productQuantity" id="productQuantity"
                            value="${product.getProductQuantity()}"></td>
+            </tr>
+            <tr>
+                <th>Color</th>
                 <td><input type="text" name="productColor" id="productColor" value="${product.getProductColor()}"></td>
+            </tr>
+            <tr>
+                <th>Description</th>
                 <td><input type="text" name="productDesc" id="productDesc" value="${product.getProductDesc()}"></td>
+            </tr>
+            <tr>
+                <th>Category</th>
                 <td><input type="text" name="categoryName" id="categoryName"
                            value="${product.getCategory().categoryName}"></td>
             </tr>
