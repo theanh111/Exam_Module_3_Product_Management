@@ -142,8 +142,8 @@ public class ProductServlet extends HttpServlet {
         Category category = categoryService.searchByName(categoryAdd);
         Product product = new Product(productName, productPrice, productQuantity, productColor, productDesc, category);
         productService.addNew(product);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("product/add.jsp");
         request.setAttribute("message", "Add New Successfully!");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("product/add.jsp");
         dispatcher.forward(request, response);
     }
 

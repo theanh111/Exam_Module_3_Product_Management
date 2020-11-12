@@ -37,7 +37,6 @@
                 <td>${category.getCategoryId()}</td>
                 <td>${category.getCategoryName()}</td>
                 <td><a href="/category?action=edit">EDIT</a></td>
-                /decks?action=editDeck&deckId=${deck.getDeckId()}
                 <td><a href="/category?action=delete">DELETE</a></td>
             </tr>
         </c:forEach>

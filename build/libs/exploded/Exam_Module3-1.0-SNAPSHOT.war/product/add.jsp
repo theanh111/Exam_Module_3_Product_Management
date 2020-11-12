@@ -25,31 +25,36 @@
 <body>
 <center>
     <h1>Product Information</h1>
-    <c:if test="${product != null}">
+    <c:if test='${message!= null}'>
         <span>${message}</span>
     </c:if>
     <a href="/product" class="btn btn-success">Back</a>
     <hr>
-    <form method="post">
+    <form method="post" autocomplete="off">
         <table border="1" cellpadding="20">
             <tr>
                 <th>Name</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Color</th>
-                <th>Description</th>
-                <th>Category</th>
+                <td><input type="text" name="productName" id="productName" placeholder="iPhone.."></td>
             </tr>
             <tr>
-                <td><input type="text" name="productName" id="productName" placeholder="iPhone.."></td>
+                <th>Price</th>
                 <td><input type="number" name="productPrice" id="productPrice" placeholder="54.99..."></td>
+            </tr>
+            <tr>
+                <th>Quantity</th>
                 <td><input type="number" name="productQuantity" id="productQuantity" placeholder="10..."></td>
+            </tr>
+            <tr>
+                <th>Color</th>
                 <td><input type="text" name="productColor" id="productColor" placeholder="Black, Pink,..."></td>
+            </tr>
+            <tr>
+                <th>Description</th>
                 <td><input type="text" name="productDesc" id="productDesc" placeholder="This is a description..."></td>
-                <td>
-                    <input type="text" name="categoryName" id="categoryName" placeholder="Phone...">
-                </td>
-
+            </tr>
+            <tr>
+                <th>Category</th>
+                <td><input type="text" name="categoryName" id="categoryName" placeholder="Phone..."></td>
             </tr>
         </table>
         <input type="submit" value="Add New">

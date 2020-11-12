@@ -30,7 +30,7 @@
     </c:if>
     <a href="/product" class="btn btn-success">Back</a>
     <hr>
-    <form method="post">
+    <form method="post" autocomplete="off">
         <table border="1" cellpadding="20">
             <tr>
                 <th>ID</th>
