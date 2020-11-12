@@ -52,10 +52,6 @@
                 <th>Description</th>
                 <td><input type="text" name="productDesc" id="productDesc" placeholder="This is a description..."></td>
             </tr>
-<%--            <tr>--%>
-<%--                <th>Category</th>--%>
-<%--                <td><input type="text" name="categoryName" id="categoryName" placeholder="Phone..."></td>--%>
-<%--            </tr>--%>
             <tr>
                 <th>Category</th>
                 <td>

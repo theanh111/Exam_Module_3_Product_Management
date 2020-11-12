@@ -7,7 +7,7 @@ public class Product {
     private int productQuantity;
     private String productColor;
     private String productDesc;
-    Category category;
+    private Category category;
 
     public Product() {
     }
